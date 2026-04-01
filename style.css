@@ -23,28 +23,36 @@ main {
     align-items: center;
     gap: 20px;
     width: 100%;
-    perspective: 100px;
 }
 
 video {
     width: 100vw;
     height: 100vh;
     object-fit: cover;
-    opacity: 0.5;
 }
 
 .carousel {
-    display: flex;
-    gap: 20px;
-    flex-wrap: nowrap;
-    padding: 20px;
-    overflow-x: auto;
-    position: relative;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: auto;
+    perspective: 100px;
 }
 
-.carousel::-webkit-scrollbar {
+.carousel>h1 {
+    margin: 100px 0px;
+}
+
+.track {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    overflow-x: auto;
+    height: 100%;
+    align-items: center;
+    position: relative;
+
+}
+
+.track::-webkit-scrollbar {
     display: none;
 }
 
@@ -64,16 +72,6 @@ h1 {
     font-family: game;
 }
 
-
-
-
-footer {
-    background: transparent;
-    color: #fff;
-    padding: 20px;
-    position: fixed;
-    bottom: 0;
-}
 
 .card {
     width: 300px;
@@ -128,4 +126,12 @@ footer {
         10px 0 20px #E2513533,
         0 -10px 20px #E2513533;
 
+}
+
+footer {
+    background: transparent;
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
 }
