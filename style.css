@@ -36,6 +36,7 @@ video {
 
 .carousel {
     width: 100vw;
+    height:100vh;
 }
 
 .carousel>h1 {
