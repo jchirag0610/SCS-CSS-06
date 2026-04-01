@@ -31,25 +31,23 @@ video {
     object-fit: cover;
 }
 
+
 .carousel {
-    width: 100%;
-    height: auto;
-    perspective: 100px;
+    width: 100vw;
 }
 
 .carousel>h1 {
-    margin: 100px 0px;
+    margin-bottom: 100px;
 }
 
 .track {
     display: flex;
-    gap: 20px;
+    gap: 40px;
     padding: 20px;
     overflow-x: auto;
     height: 100%;
     align-items: center;
     position: relative;
-
 }
 
 .track::-webkit-scrollbar {
@@ -74,8 +72,8 @@ h1 {
 
 
 .card {
-    width: 300px;
-    height: 400px;
+    width: 350px;
+    height: 500px;
     transition: transform 0.3s ease;
     border-radius: 10px;
     position: relative;
@@ -84,7 +82,6 @@ h1 {
     transition: transform 0.4s ease;
     flex-shrink: 0;
     flex-grow: 0;
-
 }
 
 .card img {
@@ -94,6 +91,7 @@ h1 {
     width: 100%;
     height: 100%;
 }
+
 
 .content h3 {
     color: #fff;
@@ -116,22 +114,54 @@ h1 {
     bottom: -60%;
 }
 
+.bottom-shadow {
+    background: linear-gradient(#E25135,transparent);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 10px;
+    height: 5%;
+    width: 100%;
+    position: absolute;
+    bottom: -5%;
+}
+
 .card:hover .content {
     bottom: 0%;
 }
 
 .card:hover {
-    transform: rotateX(15deg) scale(1.05);
     box-shadow: -10px 0 20px #E2513533,
         10px 0 20px #E2513533,
         0 -10px 20px #E2513533;
-
+}
+.ali {
+    transform:  perspective(500px) rotateY(30deg) scale(1.05);
+}
+.akshit {
+    transform:  perspective(500px) rotateY(20deg) scale(1.05);
+}
+.harsh_thead {
+    transform:  perspective(500px) rotateY(10deg) scale(1.05);
+}
+.ankur {
+    transform:  perspective(500px) rotateX(-10deg) scale(1.05);
+}
+.harsh{
+    transform:  perspective(500px) rotateX(-10deg) scale(1.05);
+}
+.satvik {
+    transform:  perspective(500px) rotateY(-30deg) scale(1.05);
+}
+.akarsh {
+    transform:  perspective(500px) rotateY(-20deg) scale(1.05);
+}
+.sarthak {
+    transform:  perspective(500px) rotateY(-10deg) scale(1.05);
 }
 
 footer {
     background: transparent;
     color: #fff;
     padding: 20px;
-    position: fixed;
-    bottom: 0;
 }
