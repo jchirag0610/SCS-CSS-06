@@ -16,7 +16,9 @@ body {
     background-size: cover;
     background-position: center;
 }
-
+::-webkit-scrollbar {
+  display: none;
+}
 main {
     display: flex;
     flex-direction: column;
@@ -115,7 +117,7 @@ h1 {
 }
 
 .bottom-shadow {
-    background: linear-gradient(#E25135,transparent);
+    background: linear-gradient(#E25135, transparent);
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -128,40 +130,45 @@ h1 {
 
 .card:hover .content {
     bottom: 0%;
+    padding-bottom: 20px;
+
 }
 
 .card:hover {
+    transform: perspective(500px) rotateY(0deg) scale(1);
     box-shadow: -10px 0 20px #E2513533,
         10px 0 20px #E2513533,
         0 -10px 20px #E2513533;
 }
+
 .ali {
-    transform:  perspective(500px) rotateY(30deg) scale(1.05);
-}
-.akshit {
-    transform:  perspective(500px) rotateY(20deg) scale(1.05);
-}
-.harsh_thead {
-    transform:  perspective(500px) rotateY(10deg) scale(1.05);
-}
-.ankur {
-    transform:  perspective(500px) rotateX(-10deg) scale(1.05);
-}
-.harsh{
-    transform:  perspective(500px) rotateX(-10deg) scale(1.05);
-}
-.satvik {
-    transform:  perspective(500px) rotateY(-30deg) scale(1.05);
-}
-.akarsh {
-    transform:  perspective(500px) rotateY(-20deg) scale(1.05);
-}
-.sarthak {
-    transform:  perspective(500px) rotateY(-10deg) scale(1.05);
+    transform: perspective(500px) rotateY(30deg) scale(1.05);
 }
 
-footer {
-    background: transparent;
-    color: #fff;
-    padding: 20px;
+.akshit {
+    transform: perspective(500px) rotateY(20deg) scale(1.05);
+}
+
+.harsh_thead {
+    transform: perspective(500px) rotateY(10deg) scale(1.05);
+}
+
+.ankur {
+    transform: perspective(500px) rotateX(10deg) scale(1.05);
+}
+
+.harsh {
+    transform: perspective(500px) rotateX(10deg) scale(1.05);
+}
+
+.satvik {
+    transform: perspective(500px) rotateY(-30deg) scale(1.05);
+}
+
+.akarsh {
+    transform: perspective(500px) rotateY(-20deg) scale(1.05);
+}
+
+.sarthak {
+    transform: perspective(500px) rotateY(-10deg) scale(1.05);
 }
